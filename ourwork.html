@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work - TJ's Asphalt and Concrete Repair</title>
+  <meta name="description" content="Our Work: Explore our extensive gallery showcasing The Art of Asphalt and The Craft of Concrete." />
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <!-- Fixed Header Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourwork.html">Gallery</a></li>
+        <li><a href="resources.html">Contact & More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Asphalt Gallery Section -->
+    <section id="asphaltGallery" class="carousel-section">
+      <h2 class="text-large">The Art of Asphalt</h2>
+      <div class="carousel" id="asphaltCarousel">
+        <!-- 6 images for Asphalt gallery -->
+        <img src="touch up 1.png" alt="Asphalt Image 1" class="active img-medium clickable-image">
+        <img src="touch up 2.png" alt="Asphalt Image 2" class="img-medium clickable-image">
+        <img src="touch up 3.png" alt="Asphalt Image 3" class="img-medium clickable-image">
+        <img src="touch up 4.png" alt="Asphalt Image 4" class="img-medium clickable-image">
+        <img src="touch up 5.png" alt="Asphalt Image 5" class="img-medium clickable-image">
+        <img src="touch up 6.png" alt="Asphalt Image 6" class="img-medium clickable-image">
+      </div>
+      <div class="gallery-contact">
+        <button onclick="openContactModal('Asphalt')" type="button">Contact About Asphalt</button>
+      </div>
+    </section>
+    
+    <!-- Concrete Gallery Section -->
+    <section id="concreteGallery" class="carousel-section">
+      <h2 class="text-large">The Craft of Concrete</h2>
+      <div class="carousel" id="concreteCarousel">
+        <!-- 6 images for Concrete gallery -->
+        <img src="concrete 3.png" width="300" height="200" alt="Concrete Image 1" class="active img-medium clickable-image">
+        <img src="concrete 4.pngimages\Concrete\concrete 5.png" width="300" height="200" alt="Concrete Image 2" class="img-medium clickable-image">
+        <img src="concrete 7.png" width="300" height="200" alt="Concrete Image 3" class="img-medium clickable-image">
+        <img src="concrete 9.png" width="300" height="200" alt="Concrete Image 4" class="img-medium clickable-image">
+        <img src="concrete 10.png" width="300" height="200" alt="Concrete Image 5" class="img-medium clickable-image">
+        <img src="concrete 17.png" width="300" height="200" alt="Concrete Image 6" class="img-medium clickable-image">
+      </div>
+      <div class="gallery-contact">
+        <button onclick="openContactModal('Concrete')" type="button">Contact About Concrete</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Modal (for enlarging gallery images) -->
+  <div id="imgModal" class="modal">
+    <span class="close" id="imgModalClose">&times;</span>
+    <div class="modal-content-wrapper">
+      <button id="prevImg" class="nav-button left-button" type="button">&lt;</button>
+      <img class="modal-content" id="modalImg">
+      <button id="nextImg" class="nav-button right-button" type="button">&gt;</button>
+    </div>
+    <div id="imgCaption"></div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content"></div>
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Contact Us About <span id="modalCategory"></span></h2>
+      <form id="galleryContactForm" action="mailto:tjsasphaltandconcrete@outlook.com" method="post" enctype="text/plain"></form>
+        <input type="hidden" id="serviceCategory" name="serviceCategory" value="">
+        <label for="gcName">Name:</label>
+        <input type="text" id="gcName" name="gcName" required>
+          
+        <label for="gcEmail">Email:</label>
+        <input type="email" id="gcEmail" name="gcEmail" required>
+        
+        <label for="gcPhone">Phone:</label>
+        <input type="tel" id="gcPhone" name="gcPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+          
+        <label for="gcMessage">Message:</label>
+        <textarea id="gcMessage" name="gcMessage" rows="5" required></textarea>
+        
+        <label for="gcAddress">Address:</label>
+        <textarea id="gcAddress" name="gcAddress" rows="2" placeholder="Your address"></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <section id="video-container">
+    <h2 class="text-large">Watch Our Work in Action</h2>
+    <div class="video-wrapper">
+      <video id="asphaltVideo" controls>
+        <source src="application of Asphalt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  </section>
+
+    <!-- Content Section -->
+    <div class="video content">
+      
+        <section id="video-content">
+      <h2 class="text-large">Application of Aspalt Sealant</h2>
+      <div class="video-content">
+
+        <div class="video-content">
+        <h2 class="text-medium"> 1. Surface Preparation </h2>
+ <p>Clean Up and Removal: Begin by clearing the driveway of any debris, loose gravel, old pavement, vegetation, or residues from previous coatings. If you’re overlaying on an old surface (asphalt, concrete, or pavers), decide whether to remove or simply prepare it for the new coat.
+  Verify Drainage and Grade: Ensure the area is well graded to promote proper drainage. Poor drainage can lead to water pooling, which may cause premature wear or cracking of the new surface.
+  Proper surface preparation is crucial because even the best asphalt won’t adhere correctly to an unstable or dirty base.</p>
+</p>
+
+      </div>
+<div class="video-content">
+  <h2 class="text-medium"> 2. Base Preparation (if Needed)</h2>
+  <p>Establish a Stable Sub Base: If your driveway needs a new foundation, excavate the topsoil and lay down a layer of well-compacted gravel. This sub base provides structural integrity and serves as a frost barrier in colder climates.
+  Compact the Base: Use a heavy roller or plate compactor to ensure the sub base is firmly compacted. An even, stable base prevents issues later when you spray and compact the asphalt binder.
+  A properly prepared base is the backbone of a long-lasting asphalt surface </p>
+  </div>
+
+<div class="video-content">
+  <h2 class="text-medium"> 3. Equipment Setup and Safety Precautions</h2>
+•	  <p> Obtain the Right Equipment: Rent a liquid asphalt sprayer that’s designed for applying hot asphalt. Make sure you understand its settings for controlling the thickness of the asphalt layer.
+  Heat and Temperature Control: Hot liquid asphalt typically needs to be maintained at about 300°F. Verify that your asphalt is adequately heated and that the sprayer is ready to maintain a consistent temperature.
+  Personal Protective Equipment (PPE): Due to the extreme heat, wear heat-resistant gloves, long sleeves, safety glasses, and sturdy, closed-toe shoes. Always follow the sprayer manufacturer’s safety guidelines.
+  Safety is paramount—handling hot asphalt without proper PPE or equipment can be hazardous.
+</p>
+</div>
+
+<div class="video-content">
+        <h2 class="text-medium"> 4. Spraying the Asphalt</h2>
+•	        <p> Set the Application Rate: Adjust the sprayer to deliver a consistent layer of asphalt. For many projects, the ideal thickness ranges from 1/4 inch to 3/8 inch. Maintaining a uniform depth ensures proper bonding and a smooth finish.
+  Apply Evenly: Start at one end of the driveway and move in a steady, controlled manner. Overlap your spray passes slightly to prevent gaps. Work continuously, as the asphalt softens quickly, ensuring that adjacent areas blend seamlessly.
+  Consistency in your application is key to a durable and attractive surface.
+</p>
+      </div>
+
+<div class="video-content">
+        <h2 class="text-medium"> 5. Optional: Aggregate (Chip) Application for Tar and Chip Driveways</h2>
+        <p> If you’re going for a tar and chip finish (a common, cost-effective alternative to traditional asphalt):
+          Immediate Aggregate Spreading: While the sprayed asphalt is still hot and tacky, quickly spread your chosen aggregate chips (gravel) over the surface. For many projects, you might use about 2.5 tons of chips per 100 square yards.
+  Even Distribution: Distribute the chips evenly—this can be done by hand or with a mechanical chip spreader—to achieve a uniform surface texture.
+  Applying aggregate immediately helps the chips bond with the asphalt binder, creating a textured surface that improves traction and durability.
+</p>
+      </div>
+
+<div class="video-content">
+        <h2 class="text-medium"> 6. Rolling and Compaction </h2>
+        <p> Use of a Roller: Immediately after spraying (and, if applicable, after aggregate application), run a heavy industrial roller over the surface. This step helps embed the aggregate into the binder (for tar and chip installations) or brings the sprayed asphalt into a uniform layer.
+          Achieve a Smooth Finish: Ensure that the roller covers the entire area evenly. Proper compaction is vital for minimizing air pockets and ensuring that the binder adheres properly to the base.
+  Rolling consolidates the applied materials, ensuring a durable and resilient driveway finish.
+</p>
+      </div>
+
+<div class="video-content">
+        <h2 class="text-medium"> 7. Curing and Final Inspection</h2>
+        <p> Letting the Asphalt Set: Allow the sprayed asphalt (or tar and chip surface) to cool and cure properly. Typically, you should wait 24 to 48 hours before subjecting the area to vehicular traffic.
+  Inspect and Clean-Up: Once cured, inspect the driveway for any thin spots, loose aggregate, or missed areas. Sweep away any excess loose chips (if applicable) to reveal a clean, uniform finish.</p>
+Curing is essential for the material to achieve its full strength and durability
+</p>
+      </div>
+      </div>
+    </section>
+  <!-- Inline JavaScript -->
+  <script>
+    function pauseVideo() {
+      var video = document.getElementById("asphaltVideo");
+      if (!video.paused) {
+        video.pause();
+      }
+    }
+  </script>
+
+  <!-- Footer with Icon -->
+  <footer>
+    <div class="footer-icon"></div>
+      <img src="bonded.png" alt="Site Icon" class="img-small">
+    </div>
+    <p>&copy; 2025 TJ's Asphalt &amp; Concrete Repair. All rights reserved.</p>
+    <p>Website by <a href="https://www.ureff3cts.site" target="_blank">Ureff3cts</a></p>
+  </footer>
+
+  <!-- JavaScript for Modal Functionality -->
+  <script>
+    // Image modal functionality for enlarged view when a gallery image is clicked
+    const imgModal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const imgCaption = document.getElementById("imgCaption");
+    const prevImg = document.getElementById("prevImg");
+    const nextImg = document.getElementById("nextImg");
+
+    // Select all images inside both carousels that should trigger this modal
+    const clickableImages = document.querySelectorAll("#asphaltCarousel img, #concreteCarousel img");
+    let currentImageIndex = -1;
+    const imagesArray = Array.from(clickableImages);
+
+    clickableImages.forEach(function(image, index) {
+      image.addEventListener('click', function() {
+        imgModal.style.display = "block";
+        modalImg.src = this.src;
+        imgCaption.innerHTML = this.alt;
+        currentImageIndex = index;
+      });
+    });
+
+    // Close the image modal when the close button is clicked
+    document.getElementById("imgModalClose").addEventListener("click", function() {
+      imgModal.style.display = "none";
+    });
+
+    // Navigate to the previous image
+    prevImg.addEventListener("click", function() {
+      if (currentImageIndex > 0) {
+        currentImageIndex--;
+        modalImg.src = imagesArray[currentImageIndex].src;
+        imgCaption.innerHTML = imagesArray[currentImageIndex].alt;
+      }
+    });
+
+    // Navigate to the next image
+    nextImg.addEventListener("click", function() {
+      if (currentImageIndex < imagesArray.length - 1) {
+        currentImageIndex++;
+        modalImg.src = imagesArray[currentImageIndex].src;
+        imgCaption.innerHTML = imagesArray[currentImageIndex].alt;
+      }
+    });
+
+    // Adjust button positions to center vertically on the modal background
+    prevImg.style.position = "absolute";
+    prevImg.style.top = "50%";
+    prevImg.style.left = "10px";
+    prevImg.style.transform = "translateY(-50%)";
+
+    nextImg.style.position = "absolute";
+    nextImg.style.top = "50%";
+    nextImg.style.right = "10px";
+    nextImg.style.transform = "translateY(-50%)";
+
+    // Contact Modal functionality
+    function openContactModal(category) {
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('serviceCategory').value = category;
+      document.getElementById('contactModal').style.display = 'block';
+    }
+    
+    document.getElementById('closeModal').addEventListener('click', function() {
+      document.getElementById('contactModal').style.display = 'none';
+    });
+    
+    // Close modals if clicking outside of them
+    window.addEventListener('click', function(event) {
+      if (event.target === document.getElementById('contactModal')) {
+        document.getElementById('contactModal').style.display = 'none';
+      }
+      if (event.target === imgModal) {
+        imgModal.style.display = 'none';
+      }
+    });
+  </script>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources - TJ's Asphalt and Concrete Repair</title>
+  <meta name="description" content="Resources: Contact us for inquiries and DIY tips, FAQs about Asphalt and Concrete Repair." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed Header Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourwork.html">Gallery</a></li>
+        <li><a href="resources.html">Contact & More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Full Contact Card Section -->
+    <section id="full-contact">
+      <h2 class="text-large">Get in Touch</h2>
+      <div class="contact-card full">
+        <div class="business-info">
+          <h3 class="text-medium">TJ's Asphalt &amp; Concrete Repair</h3>
+          <p>Proudly Serving The Central Florida Areas</p>
+          <p>Phone: (352) 830-7407</p>
+          <p>Email: tjasphaltandconcrete@outlook.com</p>
+          <p>Website:tjsasphaltandconcreterepair.com</p>
+        </div>
+        <form id="resourceContactForm" action="mailto:tjasphaltandconcrete@outlook.com" method="post" enctype="text/plain">
+            <label for="resName">Name:</label>
+            <input type="text" id="resName" name="resName" required>
+                
+            <label for="resEmail">Email:</label>
+            <input type="email" id="resEmail" name="resEmail" required>
+                
+            <label for="resPhone">Phone:</label>
+            <input type="tel" id="resPhone" name="resPhone" required>
+
+            <label for="resAddress">Address:</label>
+            <input type="text" id="resAddress" name="resAddress" required>
+
+                            
+            <label for="resService">Select Service:</label>
+            <label for="resType">Type:</label>
+            <select id="resType" name="resType" required>
+            <option value="Commercial">Commercial</option>
+            <option value="Residential">Residential</option>
+            </select>
+
+            <label for="resCategory">Category:</label>
+            <select id="resCategory" name="resCategory" required onchange="updateSubOptions()">
+            <option value="">Select Category</option>
+            <option value="Asphalt">Asphalt</option>
+            <option value="Concrete">Concrete</option>
+            </select>
+
+            <label for="resSubCategory">Sub-Category:</label>
+            <select id="resSubCategory" name="resSubCategory" required>
+            <option value="">Select Sub-Category</option>
+            </select>
+
+            <script>
+            function updateSubOptions() {
+              const category = document.getElementById('resCategory').value;
+              const subCategory = document.getElementById('resSubCategory');
+              subCategory.innerHTML = ''; // Clear existing options
+
+              if (category === 'Asphalt') {
+              const asphaltOptions = [
+              'Asphalt Repair',
+              'Asphalt Resurfacing',
+              'Asphalt Sealcoating',
+              'Asphalt Striping',
+              'Asphalt Crack Filling',
+              'Asphalt Patching',
+              'Asphalt Sealant',
+              'Asphalt Driveway',
+              'Asphalt Parking Lots'
+              ];
+              asphaltOptions.forEach(option => {
+              const opt = document.createElement('option');
+              opt.value = option;
+              opt.textContent = option;
+              subCategory.appendChild(opt);
+              });
+              } else if (category === 'Concrete') {
+              const concreteOptions = [
+              'Concrete Resurfacing',
+              'Concrete Repair',
+              'Concrete Crack Filling',
+              'Concrete Patching',
+              'Concrete Sealcoating',
+              'Concrete Driveways',
+              'Concrete Patios',
+              'Concrete Sidewalks'
+              ];
+              concreteOptions.forEach(option => {
+              const opt = document.createElement('option');
+              opt.value = option;
+              opt.textContent = option;
+              subCategory.appendChild(opt);
+              });
+              }
+            }
+            </script>
+                    
+          <label for="resMessage">Message:</label>
+          <textarea id="resMessage" name="resMessage" rows="5" required></textarea>
+                    
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+       
+    <!-- FAQ / DIY Section -->
+    <section id="faq-diy">
+      <h2 class="text-large">Frequently Asked Questions / DIY Tips</h2>
+      <div class="faq-item">
+        <div class="faq-item">
+        <h3 class="text-medium"> What are the benefits of asphalt pavement?</h3>
+        <p>• Asphalt is 20-40% cheaper than concrete.
+• It is safe, economical, and durable.
+• Asphalt pavement is fully recyclable.
+• It provides a smooth, quiet, and safe ride.
+• Properly maintained asphalt enhances vehicle safety with a skid-resistant surface.
+</p>
+      </div>
+<div class="faq-item">
+  <h3 class="text-medium">What is the Difference Between Asphalt and Concrete?</h3>
+  <p>Asphalt and concrete are essential construction materials, each with unique properties. Asphalt is a mixture of aggregate and bitumen, a petroleum-based substance, making it flexible and ideal for roads and driveways. Concrete, composed of aggregate, cement, and water, hardens into a durable, rock-like material, suitable for structures like sidewalks, patios, and foundations.</p>
+  <p>Asphalt is commonly used for tasks such as roofing, driveways, footpaths, and roads. It softens and becomes pliable under high temperatures. Concrete, however, is applied cold and is a harder material that does not soften with heat. It is typically used for structures like foundations, sidewalks, and patios.</p>
+  <p>An easy way to differentiate the two is by appearance: asphalt is usually black or brown with a distinctive texture, while concrete is gray and resembles rock.</p>
+</div>
+<div class="faq-item">
+  <h3 class="text-medium">How widely is asphalt used?</h3>
+  <p>Approximately 94% of the nation's roads and highways are paved with asphalt, making it the most commonly used material for road construction.</p>
+</div>
+<div class="faq-item">
+        <h3 class="text-medium">Are asphalt pavements quieter than other types of pavements?</h3>
+        <p>Yes, there is considerable research that shows that asphalt pavements tend to be quieter than concrete pavements overall.</p>
+      </div>
+<div class="faq-item">
+        <h3 class="text-medium"> What causes asphalt deterioration?</h3>
+        <p>Asphalt deterioration is commonly caused by factors such as oxidation, poor drainage leading to water accumulation in low-lying areas, excessive weight loads, and exposure to vehicle oil and gasoline. Over time, water pooling can result in severe cracking or "alligatoring," a term used in the paving industry. Heavy loads may cause the asphalt to sink, while oil and gasoline seepage further accelerate its degradation.</p>
+      </div>
+<div class="faq-item">
+        <h3 class="text-medium"> How Long Does It Take to Install an Asphalt Driveway?</h3>
+        <p> On average, 1 to 3 days for the installation of an asphalt driveway.</p>
+      </div>
+<div class="faq-item">
+        <h3 class="text-medium"> What Is the Lifespan of An Asphalt Driveway?</h3>
+        <p>With regular maintenance and proper care, an asphalt driveway can last between 20 to 30 years, ensuring durability and long-term value.</p>
+      </div>
+<div class="faq-item">
+        <h3 class="text-medium"> How Thick Should an Asphalt Driveway Be?</h3>
+        <p> The absolute minimum asphalt thickness should be is 2"</p>
+      </div>
+<div class="faq-item"></div>
+        <h3 class="text-medium">How often should I maintain my asphalt driveways?</h3>
+        <p>To ensure longevity, schedule maintenance for your asphalt driveway every 2–3 years, including sealcoating and crack repairs.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="text-medium">What is the best time for concrete repairs?</h3>
+        <p>Concrete repairs are best scheduled during milder weather – check our offseason dates for extra savings!</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="text-medium">DIY Tip: How to seal cracks?</h3>
+        <p>Clean the crack thoroughly, remove loose debris, and use a high-quality sealant for best results.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Icon -->
+  <footer>
+    <div class="footer-icon">
+      <img src="bonded.png" alt="Site Icon" class="img-small">
+    </div>
+    <p>&copy; 2025 TJ's Asphalt &amp; Concrete Repair. All rights reserved.</p>
+       <p>Website Designed By Ureff3cts</p>
+  </footer>
+</body>
+</html>

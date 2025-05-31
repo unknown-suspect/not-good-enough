@@ -1,0 +1,66 @@
+/* Video Container - ensuring 16:9 aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  /* Enforce a 16:9 ratio (modern browsers support this property) */
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* Pause Button Styling */
+#pauseButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  background-color: #444;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Bold text styling with Georgia font, white color, red & yellow shadows and a black outline */
+strong {
+  font-family: Georgia, serif;
+  color: #fff;
+  text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000,
+     2px  2px 0 red,
+    -2px -2px 0 yellow;
+}
